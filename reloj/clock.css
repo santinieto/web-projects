@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.clock {    
+    background-color: rgb(26, 26, 25);            /* Color de fondo */
+
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50px; 
+    border: 15px solid;
+
+    width: 450px;
+    height: 150px;
+
+    box-shadow: black;
+    box-shadow: 0px 0px 10px #000000;            /* Sombra del texto */
+}
+
+.clock div {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;            /* Seteo la letra */
+    text-shadow: 0px 0px 10px #0cd2ec;            /* Sombra del texto */
+    color: white;                                 /* Color del texto */
+    padding: 5px 9px 5px;                           /* Padding de los carteles */
+}
+
+.clock div span:hover {
+    text-shadow: 0px 0px 50px #077f8f;            /* Sombra del texto */
+}
+
+.timeline {
+    font-size: 50px;                                /* Tamaño de la letra */
+}
+
+.dateline {
+    font-size: 20px;                                /* Tamaño de la letra */
+}
+
+.soundline {
+    font-size: 20px;                                /* Tamaño de la letra */
+}
