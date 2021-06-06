@@ -9,13 +9,13 @@ const dayName = document.querySelector(".day-name");
 
 // Nombres de los dias
 dayNames = {
-    0 : "Sun    -",
-    1 : "Mon    -",
-    2 : "Tue    -",
-    3 : "Wed    -",
-    4 : "Thr    -",
-    5 : "Fri    -",
-    6 : "Sat    -",
+    0 : "Sun -",
+    1 : "Mon -",
+    2 : "Tue -",
+    3 : "Wed -",
+    4 : "Thr -",
+    5 : "Fri -",
+    6 : "Sat -",
 }
 
 // Cargo el boton de volumen On/Off
