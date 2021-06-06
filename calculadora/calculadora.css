@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(66, 45, 45);
+}
+
+.my-container {
+    display: flex;                                  /*  */
+    justify-content: center;                        /* Ponnemos todo el contenido en el centro */
+    align-items: center;                            /* Alineamos todos los items al medio */
+    height: 75vh;                                   /* Bajamos el bloque */
+}
+
+.my-calculadora {
+    display: grid;    
+    grid-template-columns: repeat(5, 75px);         /* Le decimos que va a tener 4 columnas de 75px cada una */
+    grid-template-rows: 160px repeat(4, 75px);      /* Le decimos que va a tener 5 filas donde la primera es de 160px y las otros 75px */
+    background-color: rgb(148, 150, 153);         /* Color del fondo */
+    padding: 15px;                                  /* Distancia entre botones */
+    border-radius: 32px;                            /* Radio de las esquinas */
+
+    /* Esto es la sombra de la caja, va a ir 15 px para la derecha, 10 px para abajo sin blurreado y 5 px de spread */
+    /* Le damos un color negro (seis ceros) con 33% de opacidad */
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+.my-btn { 
+    cursor: pointer;
+    margin: 5px;                                    /* Distancia que se recorta para adentro el boton */
+    padding: 0px;
+    border-radius: 32px;                            /* Radio de los bordes */
+    font-size: 1.5en;
+    border: none;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00000040;
+}
+
+/* Resaltamos el boton cuando lo vayamos a usar */
+.my-btn:active {
+    background-color: rgb(148, 150, 153);
+}
+
+/* Le sacamos el borde cuando resaltamos el boton */
+.my-btn:focus {
+    outline: none;
+}
+
+.display {
+    grid-column: 1 / -1;                                /* Le decimos que el display va a ir de una punta a la otra */
+    padding: 16px;
+    display: flex;
+    margin: 15px 5px;                                   /* Margenes de alto y ancho respectivamente */
+    background-color: rgb(24, 23, 23);                /* Color del fondo */
+    color: white;                                     /* Color de la letra */
+    border-radius: 32px;                                /* Radio de los bordes */
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00000040;
+    flex-direction: column;                             /* Para que se vea una arriba del otro */
+    /* align-items: flex-end; */
+    /* text-align: right;     */                        /* Alineamos el texto a la derecha */
+    justify-content: space-between;                     /* Separamos los valores entre ellos */
+    word-break: break-all;                              /* Por si tenemos que usar dos lineas */
+}
+
+#resultado {
+    font-size: 0.75cm;
+    text-align: right;
+}
+
+#ecuacion {
+    font-size: 0.75cm;
+}
